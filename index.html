@@ -25,7 +25,10 @@
       <div class="container">
         <section class="nav-section">
           <div class="logo">
-            <img src="icons/SHOP.CO.svg" alt="logo shop.co" />
+            <button id="burger-menu-btn">
+              <img src="icons/burger-menu.svg" alt="burger menu icon" />
+            </button>
+            <img id="shop-logo" src="icons/SHOP.CO.svg" alt="logo shop.co" />
           </div>
 
           <div>
@@ -50,9 +53,14 @@
           </div>
 
           <div class="profile">
+            <button id="search-button">
+              <img src="icons/search-icon.svg" alt="search icon" />
+            </button>
+
             <button>
               <img src="icons/cart-icon.svg" alt="cart icon" />
             </button>
+
             <button>
               <img src="icons/profile-icon.svg" alt="profile icon" />
             </button>
@@ -60,6 +68,7 @@
         </section>
       </div>
     </header>
+
     <main>
       <section class="advertise">
         <div class="container">
@@ -72,7 +81,7 @@
               of style.
             </p>
 
-            <div><button class="shop-btn">Shop Now</button></div>
+            <button class="shop-btn">Shop Now</button>
 
             <div class="statistics">
               <div>
@@ -90,14 +99,22 @@
                 <p class="description">Happy Customers</p>
               </div>
             </div>
+            <div class="cover">
+              <img
+                src="pictures/cover-photo-sm.svg"
+                alt="stylish cover photo"
+              />
+            </div>
           </div>
         </div>
-        <div class="cover">
+
+        <!-- <div class="cover">
           <img
             src="pictures/cover-photo-lg.svg"
             alt="trendy-fashionable-couple-posing"
           />
-        </div>
+        </div> -->
+
         <div class="brands">
           <div class="container">
             <div class="logos">
@@ -239,16 +256,17 @@
           <div class="review-heading">
             <h2>OUR HAPPY CUSTOMERS</h2>
 
-            <div>
-              <span id="left-arrow"
-                ><img src="icons/arrow-left-bold 2.svg" alt="left arrow"
-              /></span>
+            <div class="arrow-navigation">
+              <button id="left-arrow">
+                <img src="icons/arrow-left-bold 2.svg" alt="left arrow" />
+              </button>
 
-              <span id="right-arrow"
-                ><img
+              <button id="right-arrow">
+                <img
                   src="icons/arrow-right-bold 1.svg"
                   alt="right-arrow arrow"
-              /></span>
+                />
+              </button>
             </div>
           </div>
 
@@ -303,6 +321,7 @@
         </section>
       </div>
     </main>
+
     <footer>
       <div class="container">
         <div class="subscription-box">
@@ -316,32 +335,78 @@
           </div>
         </div>
       </div>
-      <div class="footer-nav-box">
-        <div class="general-info">
-          <img src="icons/SHOP.CO.svg" alt="shop.co logo" />
-          <p class="description">
-            We have clothes that suits your style and which you’re proud to
-            wear. From women to men.
-          </p>
-          <div class="socials">
-            <a href=""
-              ><img src="icons/socials/twitter.svg" alt="twitter logo"
-            /></a>
-            <a href=""
-              ><img src="icons/socials/fb.svg" alt="facebook logo"
-            /></a>
-            <a href=""
-              ><img src="icons/socials/ig.svg" alt="instagram logo"
-            /></a>
-            <a href=""
-              ><img src="icons/socials/github.svg" alt="github logo"
-            /></a>
+
+      <div class="container">
+        <div class="footer-nav-box">
+          <div class="general-info">
+            <img src="icons/SHOP.CO.svg" alt="shop.co logo" />
+
+            <p class="description">
+              We have clothes that suits your style and which you’re proud to
+              wear. From women to men.
+            </p>
+
+            <div class="socials">
+              <a href=""
+                ><img src="icons/socials/twitter.svg" alt="twitter logo"
+              /></a>
+              <a href=""
+                ><img src="icons/socials/fb.svg" alt="facebook logo"
+              /></a>
+              <a href=""
+                ><img src="icons/socials/ig.svg" alt="instagram logo"
+              /></a>
+              <a href=""
+                ><img src="icons/socials/github.svg" alt="github logo"
+              /></a>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <h5>COMPANY</h5>
+            <a href="">About</a>
+            <a href="">Features</a>
+            <a href="">Works</a>
+            <a href="">Career</a>
+          </div>
+
+          <div class="footer-links">
+            <h5>HELP</h5>
+            <a href="">Customer Support</a>
+            <a href="">Delivery Details</a>
+            <a href="">Terms & Conditions</a>
+            <a href="">Privacy Policy</a>
+          </div>
+
+          <div class="footer-links">
+            <h5>FAQ</h5>
+            <a href="">Account</a>
+            <a href="">Manage Deliveries</a>
+            <a href="">Orders</a>
+            <a href="">Payments</a>
+          </div>
+
+          <div class="footer-links">
+            <h5>RESOURCES</h5>
+            <a href="">Free e-Books</a>
+            <a href="">Development Tutorial</a>
+            <a href="">How to - Blog</a>
+            <a href="">Youtube Playlist</a>
           </div>
         </div>
-        <div class="company"></div>
-        <div class="help"></div>
-        <div class="faq"></div>
-        <div class="resources"></div>
+
+        <div class="footer-separator"></div>
+
+        <div class="bottomline">
+          <p class="copyright">© 2000-2021, All rights reserved</p>
+          <div class="payment-versions">
+            <img src="icons/payments/visa.svg" alt="visa icon" />
+            <img src="icons/payments/mc.svg" alt="mastercard icon" />
+            <img src="icons/payments/paypal.svg" alt="paypal icon" />
+            <img src="icons/payments/apple-pay.svg" alt="apple pay icon" />
+            <img src="icons/payments/g-pay.svg" alt="google pay" />
+          </div>
+        </div>
       </div>
     </footer>
   </body>
