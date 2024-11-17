@@ -27,6 +27,7 @@
 
 body {
   font-family: "Satoshi", sans-serif;
+  overflow-x: hidden;
 }
 .container {
   width: 100%;
@@ -69,6 +70,7 @@ body {
 
 .nav-section {
   margin: 24px 0;
+  padding: 0 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -137,7 +139,8 @@ body {
 }
 
 .headline {
-  max-width: 550px;
+  padding: 0 100px;
+  max-width: 750px;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -186,7 +189,6 @@ h1 {
 
 .logos {
   width: 100%;
-  max-height: 146px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -200,6 +202,7 @@ h1 {
 /* new arrival section from here */
 .new-arrivals {
   margin-top: 72px;
+  padding: 0 100px;
   width: 100%;
 }
 
@@ -210,12 +213,15 @@ h2 {
 }
 
 .products-container {
+  width: 100%;
   margin-top: 55px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 20px;
-  overflow: hidden;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scrollbar-width: none;
 }
 
 .product {
@@ -263,6 +269,10 @@ h3 {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
+.styles-section {
+  padding: 0 100px;
+}
+
 .dress-style {
   margin-top: 80px;
   padding: 70px 64px 76px;
@@ -272,27 +282,85 @@ h3 {
 
 .styles-container {
   margin-top: 64px;
-  display: grid;
-  grid-template-columns: auto auto;
+  display: flex;
+  flex-wrap: wrap;
   gap: 20px;
   overflow: hidden;
 }
 
+@media (max-width: 1460px) {
+  .styles-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .styles-container div {
+    width: 684px;
+  }
+}
+
+.styles-container a {
+  text-decoration: none;
+  color: inherit;
+  height: 289px;
+}
+
+h6 {
+  margin: 25px 36px;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.casual-style {
+  width: 407px;
+  background-image: url("pictures/styles/image\ 11.png");
+}
+
+.styles-img {
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  height: 289px;
+}
+
+.party-style {
+  width: 684px;
+  background-image: url("pictures/styles/image\ 12.png");
+}
+
+.formal-style {
+  width: 684px;
+  background-image: url("pictures/styles/image\ 13.png");
+}
+
+.gym-style {
+  width: 407px;
+  background-image: url("pictures/styles/image\ 14.png");
+}
+
 /* happy customers section starts here */
+.customer-section {
+  width: 100%;
+}
+
 .happy-customer {
   margin-top: 80px;
+  padding: 0 100px;
+  z-index: 2;
 }
 
 .review-heading {
   display: flex;
   align-items: end;
   justify-content: space-between;
+  gap: 10px;
 }
 
 .arrow-navigation {
   display: flex;
   flex-wrap: nowrap;
-  gap: 16px;
+  gap: 10px;
 }
 
 .arrow-navigation button {
@@ -304,8 +372,13 @@ h3 {
 .reviews-container {
   margin-top: 40px;
   display: flex;
+  justify-content: center;
   gap: 20px;
-  overflow: hidden;
+}
+
+.review:first-child,
+.review:last-child {
+  filter: blur(2px);
 }
 
 .review {
@@ -462,10 +535,6 @@ h5 {
     margin: 0;
   }
 
-  .styles-container {
-    grid-template-columns: auto;
-  }
-
   .subscription-box {
     flex-direction: column;
     gap: 32px;
@@ -525,7 +594,9 @@ h5 {
     display: none;
   }
 
-  .container {
+  .container,
+  .nav-section,
+  .new-arrivals {
     padding: 0 16px;
   }
 
@@ -545,6 +616,26 @@ h5 {
 
   .digits {
     font-size: 24px;
+  }
+
+  .review-heading {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .styles-section {
+    padding: 0 24px;
+  }
+
+  .dress-style {
+    padding: 0 24px;
+  }
+
+  .styles-container div {
+    width: 310px;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
   }
 
   .bottomline {
